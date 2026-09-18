@@ -22,6 +22,7 @@
     <nav class="main-nav">
       <a href="../index.html" class="">홈</a>
       <a href="../about.html" class="">소개</a>
+      <a href="../mypage.html" class="">마이페이지</a>
       <a href="../contact.html" class="">문의</a>
     </nav>
   </div>
@@ -35,39 +36,89 @@
   <p class="cat-intro">대학생 시기는 인생에서 가장 긴 방학과 가장 적은 책임이 동시에 주어지는 특별한 구간입니다. 동시에 취업 이후를 좌우하는 습관과 준비를 시작하기에도 최적의 시기입니다.</p>
 </section>
 <section class="wrap">
-  <div class="ad-slot">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-2557338953436433"
-       data-ad-slot="2222222222"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <div class="filter-bar">
+  <label>💰 비용
+    <select class="filter-select" data-filter="cost">
+      <option value="all">전체</option>
+      <option value="무료">무료</option><option value="저비용">저비용</option><option value="중비용">중비용</option><option value="고비용">고비용</option>
+    </select>
+  </label>
+  <label>⚡ 난이도
+    <select class="filter-select" data-filter="diff">
+      <option value="all">전체</option>
+      <option value="쉬움">쉬움</option><option value="보통">보통</option><option value="어려움">어려움</option>
+    </select>
+  </label>
 </div>
 
 </section>
 <section class="wrap">
   <h2 class="section-title badge-fading-title">🔥 지금 아니면 못 하는 것</h2>
   <ul class="item-list item-list-fading">
-  <li class="item-card">
-    <h4>한 달 이상 배낭여행 떠나기</h4>
+  <li class="item-card" data-cost="고비용" data-diff="어려움">
+    <div class="item-card-top">
+      <h4>한 달 이상 배낭여행 떠나기</h4>
+      <button type="button" class="add-btn" data-id="university-fading-0" data-title="한 달 이상 배낭여행 떠나기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="고비용" data-diff="어려움">+ 내 리스트에 담기</button>
+    </div>
     <p>직장인이 되면 연차를 쪼개 써야 합니다. 방학을 활용한 장기 여행은 대학생 때가 사실상 마지막 기회입니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-3">💰 고비용</span>
+      <span class="tag tag-diff diff-2">⚡ 어려움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>전공과 무관한 동아리·활동에 몰입하기</h4>
+  <li class="item-card" data-cost="저비용" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>전공과 무관한 동아리·활동에 몰입하기</h4>
+      <button type="button" class="add-btn" data-id="university-fading-1" data-title="전공과 무관한 동아리·활동에 몰입하기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="저비용" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>취업 준비가 본격화되기 전, 순수하게 흥미로 다양한 활동에 뛰어들 수 있는 여유가 있습니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-1">💰 저비용</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>휴학하고 하고 싶은 일에 몰두해보기</h4>
+  <li class="item-card" data-cost="중비용" data-diff="어려움">
+    <div class="item-card-top">
+      <h4>휴학하고 하고 싶은 일에 몰두해보기</h4>
+      <button type="button" class="add-btn" data-id="university-fading-2" data-title="휴학하고 하고 싶은 일에 몰두해보기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="중비용" data-diff="어려움">+ 내 리스트에 담기</button>
+    </div>
     <p>직장인이 된 후 몇 달씩 쉬는 것은 현실적으로 매우 어렵습니다. 휴학이라는 제도적 장치가 있을 때 활용해보세요.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-2">💰 중비용</span>
+      <span class="tag tag-diff diff-2">⚡ 어려움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>다양한 사람들과 넓게 관계 맺어보기</h4>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>다양한 사람들과 넓게 관계 맺어보기</h4>
+      <button type="button" class="add-btn" data-id="university-fading-3" data-title="다양한 사람들과 넓게 관계 맺어보기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>학과, 동아리, 교양 수업 등에서 만나는 폭넓은 인간관계는 사회 진출 이후 점점 좁아지는 경우가 많습니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>아르바이트로 다양한 현장 경험해보기</h4>
+  <li class="item-card" data-cost="무료" data-diff="보통">
+    <div class="item-card-top">
+      <h4>아르바이트로 다양한 현장 경험해보기</h4>
+      <button type="button" class="add-btn" data-id="university-fading-4" data-title="아르바이트로 다양한 현장 경험해보기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="무료" data-diff="보통">+ 내 리스트에 담기</button>
+    </div>
     <p>여러 업종을 가볍게 경험해볼 수 있는 유연함은 취업 후에는 갖기 어렵습니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-1">⚡ 보통</span>
+    </div>
   </li>
 </ul>
 
@@ -75,45 +126,91 @@
 <section class="wrap">
   <h2 class="section-title badge-prep-title">🌱 지금 해두면 다음 시기에 도움이 되는 것</h2>
   <ul class="item-list item-list-prep">
-  <li class="item-card">
-    <h4>신용점수 관리 시작하기</h4>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>신용점수 관리 시작하기</h4>
+      <button type="button" class="add-btn" data-id="university-prep-0" data-title="신용점수 관리 시작하기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>체크카드부터 시작해 신용카드 소액 사용 이력을 꾸준히 쌓아두면 사회초년생 때 대출·카드 발급에서 유리합니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>어학·자격증 등 취업 기초 체력 다지기</h4>
+  <li class="item-card" data-cost="저비용" data-diff="보통">
+    <div class="item-card-top">
+      <h4>어학·자격증 등 취업 기초 체력 다지기</h4>
+      <button type="button" class="add-btn" data-id="university-prep-1" data-title="어학·자격증 등 취업 기초 체력 다지기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="저비용" data-diff="보통">+ 내 리스트에 담기</button>
+    </div>
     <p>졸업이 임박해서 시작하면 촉박합니다. 저학년 때부터 여유 있게 준비하면 선택지가 넓어집니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-1">💰 저비용</span>
+      <span class="tag tag-diff diff-1">⚡ 보통</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>인턴·프로젝트 경험으로 이력서 채우기</h4>
+  <li class="item-card" data-cost="저비용" data-diff="보통">
+    <div class="item-card-top">
+      <h4>인턴·프로젝트 경험으로 이력서 채우기</h4>
+      <button type="button" class="add-btn" data-id="university-prep-2" data-title="인턴·프로젝트 경험으로 이력서 채우기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="저비용" data-diff="보통">+ 내 리스트에 담기</button>
+    </div>
     <p>실무 경험은 채용 시장에서 가장 강력한 차별화 요소입니다. 작은 프로젝트라도 미리 시작하세요.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-1">💰 저비용</span>
+      <span class="tag tag-diff diff-1">⚡ 보통</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>첫 목돈 모으기 습관(적금) 들이기</h4>
+  <li class="item-card" data-cost="저비용" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>첫 목돈 모으기 습관(적금) 들이기</h4>
+      <button type="button" class="add-btn" data-id="university-prep-3" data-title="첫 목돈 모으기 습관(적금) 들이기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="저비용" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>작은 금액이라도 정기적으로 저축하는 습관은 사회초년생이 된 이후 재테크의 출발점이 됩니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-1">💰 저비용</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>인맥·네트워크의 씨앗 뿌려두기</h4>
-    <p>동기, 선후배, 교수님과의 관계는 시간이 지날수록 자산이 됩니다. 지금 쌓아둔 관계가 이후 커리어에 도움이 되는 경우가 많습니다.</p>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>인맥·네트워크의 씨앗 뿌려두기</h4>
+      <button type="button" class="add-btn" data-id="university-prep-4" data-title="인맥·네트워크의 씨앗 뿌려두기"
+        data-cat="university" data-catname="대학생 시절" data-emoji="🎓"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
+    <p>동기, 선후배, 교수님과의 관계는 시간이 지날수록 자산이 됩니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
 </ul>
-
-</section>
-<section class="wrap">
-  <div class="ad-slot">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-2557338953436433"
-       data-ad-slot="3333333333"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
 
 </section>
 <section class="wrap">
   <div class="cat-nav"><a href="teen.html">&larr; 10대·학생 시절</a><a href="../index.html">전체 시기 보기</a><a href="early-career.html">사회초년생 &rarr;</a></div>
 </section>
 
+<section class="wrap bottom-ad-section">
+<div class="ad-slot">
+  <span class="ad-slot-label">광고</span>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-2557338953436433"
+       data-ad-slot="1111111111"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+</section>
 </main>
 <footer class="site-footer">
   <div class="wrap footer-inner">
@@ -123,6 +220,7 @@
     </div>
     <div class="footer-links">
       <a href="../about.html">사이트 소개</a>
+      <a href="../mypage.html">마이페이지</a>
       <a href="../privacy.html">개인정보처리방침</a>
       <a href="../terms.html">이용약관</a>
       <a href="../contact.html">문의하기</a>
@@ -133,9 +231,10 @@
 <div id="cookie-consent" class="cookie-consent" hidden>
   <p>이 사이트는 서비스 향상과 맞춤 광고 제공을 위해 쿠키를 사용합니다. 자세한 내용은
     <a href="../privacy.html">개인정보처리방침</a>에서 확인하실 수 있습니다.</p>
-  <button id="cookie-accept" class="btn-accept">확인했어요</button>
+  <button id="cookie-accept" class="btn-accept" type="button">확인했어요</button>
 </div>
 <script src="../assets/cookie-consent.js"></script>
 
+<script src="../assets/mylist.js"></script>
 </body>
 </html>

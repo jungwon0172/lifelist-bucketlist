@@ -22,6 +22,7 @@
     <nav class="main-nav">
       <a href="../index.html" class="">홈</a>
       <a href="../about.html" class="">소개</a>
+      <a href="../mypage.html" class="">마이페이지</a>
       <a href="../contact.html" class="">문의</a>
     </nav>
   </div>
@@ -32,42 +33,92 @@
   <div class="cat-hero-emoji">🎒</div>
   <h1>10대·학생 시절</h1>
   <p class="cat-subtitle">교복을 입고 있는 지금이 아니면 못 하는 것들</p>
-  <p class="cat-intro">10대는 시간은 많지만 스스로 결정할 수 있는 범위가 좁은 시기입니다. 그만큼 '지금이 아니면 못 하는 것'과 '지금 해두면 평생 가는 습관'이 뚜렷하게 갈립니다. 성인이 되고 나면 다시 만들기 어려운 경험, 그리고 성인이 된 이후를 훨씬 수월하게 만들어 줄 준비를 함께 정리했습니다.</p>
+  <p class="cat-intro">10대는 시간은 많지만 스스로 결정할 수 있는 범위가 좁은 시기입니다. 그만큼 '지금이 아니면 못 하는 것'과 '지금 해두면 평생 가는 습관'이 뚜렷하게 갈립니다.</p>
 </section>
 <section class="wrap">
-  <div class="ad-slot">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-2557338953436433"
-       data-ad-slot="2222222222"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <div class="filter-bar">
+  <label>💰 비용
+    <select class="filter-select" data-filter="cost">
+      <option value="all">전체</option>
+      <option value="무료">무료</option><option value="저비용">저비용</option><option value="중비용">중비용</option><option value="고비용">고비용</option>
+    </select>
+  </label>
+  <label>⚡ 난이도
+    <select class="filter-select" data-filter="diff">
+      <option value="all">전체</option>
+      <option value="쉬움">쉬움</option><option value="보통">보통</option><option value="어려움">어려움</option>
+    </select>
+  </label>
 </div>
 
 </section>
 <section class="wrap">
   <h2 class="section-title badge-fading-title">🔥 지금 아니면 못 하는 것</h2>
   <ul class="item-list item-list-fading">
-  <li class="item-card">
-    <h4>친구들과 무계획 여행 떠나보기</h4>
+  <li class="item-card" data-cost="중비용" data-diff="보통">
+    <div class="item-card-top">
+      <h4>친구들과 무계획 여행 떠나보기</h4>
+      <button type="button" class="add-btn" data-id="teen-fading-0" data-title="친구들과 무계획 여행 떠나보기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="중비용" data-diff="보통">+ 내 리스트에 담기</button>
+    </div>
     <p>숙소도 예약 없이, 목적지도 정하지 않고 친구들과 즉흥적으로 떠나는 경험은 책임과 일정이 생기는 성인기 이후에는 다시 만들기 어렵습니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-2">💰 중비용</span>
+      <span class="tag tag-diff diff-1">⚡ 보통</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>교복 입고 축제·행사 즐기기</h4>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>교복 입고 축제·행사 즐기기</h4>
+      <button type="button" class="add-btn" data-id="teen-fading-1" data-title="교복 입고 축제·행사 즐기기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>학창 시절 특유의 분위기와 소속감은 졸업과 동시에 사라집니다. 축제, 체육대회, 수학여행 같은 순간을 충분히 즐겨두세요.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>악기·운동을 '그냥' 배워보기</h4>
+  <li class="item-card" data-cost="저비용" data-diff="보통">
+    <div class="item-card-top">
+      <h4>악기·운동을 '그냥' 배워보기</h4>
+      <button type="button" class="add-btn" data-id="teen-fading-2" data-title="악기·운동을 '그냥' 배워보기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="저비용" data-diff="보통">+ 내 리스트에 담기</button>
+    </div>
     <p>입시나 취업 압박 없이 순수한 흥미로 새로운 걸 배울 수 있는 여유는 이 시기가 가장 큽니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-1">💰 저비용</span>
+      <span class="tag tag-diff diff-1">⚡ 보통</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>긴 방학을 온전히 나만의 시간으로 써보기</h4>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>긴 방학을 온전히 나만의 시간으로 써보기</h4>
+      <button type="button" class="add-btn" data-id="teen-fading-3" data-title="긴 방학을 온전히 나만의 시간으로 써보기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>한 달 넘는 방학을 자유롭게 쓸 수 있는 시기는 학생 때가 마지막인 경우가 많습니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>친구와 밤새 이야기하며 진로 고민 나누기</h4>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>친구와 밤새 이야기하며 진로 고민 나누기</h4>
+      <button type="button" class="add-btn" data-id="teen-fading-4" data-title="친구와 밤새 이야기하며 진로 고민 나누기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>이해관계 없이 순수하게 서로의 미래를 응원해주는 관계와 시간은 성인이 되면 점점 희소해집니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
 </ul>
 
@@ -75,45 +126,91 @@
 <section class="wrap">
   <h2 class="section-title badge-prep-title">🌱 지금 해두면 다음 시기에 도움이 되는 것</h2>
   <ul class="item-list item-list-prep">
-  <li class="item-card">
-    <h4>독서·글쓰기 습관 만들기</h4>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>독서·글쓰기 습관 만들기</h4>
+      <button type="button" class="add-btn" data-id="teen-prep-0" data-title="독서·글쓰기 습관 만들기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>성인이 되면 시간에 쫓겨 책 읽을 여유가 줄어듭니다. 지금 만든 독서 습관은 평생의 사고력과 문해력의 기반이 됩니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>타이핑·문서작성 등 기본기 익히기</h4>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>타이핑·문서작성 등 기본기 익히기</h4>
+      <button type="button" class="add-btn" data-id="teen-prep-1" data-title="타이핑·문서작성 등 기본기 익히기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>한글, 엑셀 같은 기본 도구를 미리 익혀두면 대학·직장 생활 초반의 시행착오를 크게 줄일 수 있습니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>용돈 기입장으로 돈 관리 감각 기르기</h4>
+  <li class="item-card" data-cost="무료" data-diff="쉬움">
+    <div class="item-card-top">
+      <h4>용돈 기입장으로 돈 관리 감각 기르기</h4>
+      <button type="button" class="add-btn" data-id="teen-prep-2" data-title="용돈 기입장으로 돈 관리 감각 기르기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="무료" data-diff="쉬움">+ 내 리스트에 담기</button>
+    </div>
     <p>작은 돈이라도 스스로 관리해본 경험은 이후 목돈을 다룰 때의 습관을 결정합니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-0">⚡ 쉬움</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>나만의 관심 분야 포트폴리오 시작하기</h4>
+  <li class="item-card" data-cost="저비용" data-diff="보통">
+    <div class="item-card-top">
+      <h4>나만의 관심 분야 포트폴리오 시작하기</h4>
+      <button type="button" class="add-btn" data-id="teen-prep-3" data-title="나만의 관심 분야 포트폴리오 시작하기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="저비용" data-diff="보통">+ 내 리스트에 담기</button>
+    </div>
     <p>그림, 글, 코드, 영상 등 뭐든 좋습니다. 일찍 쌓아온 기록은 대학 입시나 진로 선택에서 강력한 무기가 됩니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-1">💰 저비용</span>
+      <span class="tag tag-diff diff-1">⚡ 보통</span>
+    </div>
   </li>
-  <li class="item-card">
-    <h4>건강한 생활 루틴(수면·운동) 몸에 익히기</h4>
+  <li class="item-card" data-cost="무료" data-diff="보통">
+    <div class="item-card-top">
+      <h4>건강한 생활 루틴(수면·운동) 몸에 익히기</h4>
+      <button type="button" class="add-btn" data-id="teen-prep-4" data-title="건강한 생활 루틴(수면·운동) 몸에 익히기"
+        data-cat="teen" data-catname="10대·학생 시절" data-emoji="🎒"
+        data-cost="무료" data-diff="보통">+ 내 리스트에 담기</button>
+    </div>
     <p>성인기 만성 피로와 체력 저하는 대부분 학생 시절의 생활 습관에서 시작됩니다.</p>
+    <div class="tag-row">
+      <span class="tag tag-cost cost-0">💰 무료</span>
+      <span class="tag tag-diff diff-1">⚡ 보통</span>
+    </div>
   </li>
 </ul>
-
-</section>
-<section class="wrap">
-  <div class="ad-slot">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-2557338953436433"
-       data-ad-slot="3333333333"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
 
 </section>
 <section class="wrap">
   <div class="cat-nav"><span></span><a href="../index.html">전체 시기 보기</a><a href="university.html">대학생 시절 &rarr;</a></div>
 </section>
 
+<section class="wrap bottom-ad-section">
+<div class="ad-slot">
+  <span class="ad-slot-label">광고</span>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-2557338953436433"
+       data-ad-slot="1111111111"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+</section>
 </main>
 <footer class="site-footer">
   <div class="wrap footer-inner">
@@ -123,6 +220,7 @@
     </div>
     <div class="footer-links">
       <a href="../about.html">사이트 소개</a>
+      <a href="../mypage.html">마이페이지</a>
       <a href="../privacy.html">개인정보처리방침</a>
       <a href="../terms.html">이용약관</a>
       <a href="../contact.html">문의하기</a>
@@ -133,9 +231,10 @@
 <div id="cookie-consent" class="cookie-consent" hidden>
   <p>이 사이트는 서비스 향상과 맞춤 광고 제공을 위해 쿠키를 사용합니다. 자세한 내용은
     <a href="../privacy.html">개인정보처리방침</a>에서 확인하실 수 있습니다.</p>
-  <button id="cookie-accept" class="btn-accept">확인했어요</button>
+  <button id="cookie-accept" class="btn-accept" type="button">확인했어요</button>
 </div>
 <script src="../assets/cookie-consent.js"></script>
 
+<script src="../assets/mylist.js"></script>
 </body>
 </html>
