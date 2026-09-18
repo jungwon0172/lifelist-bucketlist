@@ -6,10 +6,12 @@
 
   var currentYear = new Date().getFullYear();
   var years = [];
-  for (var y = currentYear - 1; y <= currentYear + 4; y++) years.push(y);
+  for (var y = currentYear - 1; y <= 2130; y++) years.push(y);
+  var nearYears = years.slice(0, 7); // 탭에는 최근 연도만 표시 (빠른 선택용)
   var selectedYear = currentYear;
 
   var yearTabsEl = document.getElementById('year-tabs');
+  var yearJumpEl = document.getElementById('year-jump');
   var listEl = document.getElementById('mypage-list');
   var yearSelectEl = document.getElementById('custom-year');
   var form = document.getElementById('custom-add-form');
@@ -18,7 +20,7 @@
 
   function renderYearTabs() {
     yearTabsEl.innerHTML = '';
-    years.forEach(function (y) {
+    nearYears.forEach(function (y) {
       var btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'year-tab' + (y === selectedYear ? ' active' : '');
@@ -26,9 +28,26 @@
       btn.addEventListener('click', function () {
         selectedYear = y;
         renderYearTabs();
+        yearJumpEl.value = selectedYear;
         renderList();
       });
       yearTabsEl.appendChild(btn);
+    });
+  }
+
+  function renderYearJump() {
+    yearJumpEl.innerHTML = '';
+    years.forEach(function (y) {
+      var opt = document.createElement('option');
+      opt.value = y;
+      opt.textContent = y + '년';
+      if (y === selectedYear) opt.selected = true;
+      yearJumpEl.appendChild(opt);
+    });
+    yearJumpEl.addEventListener('change', function () {
+      selectedYear = parseInt(yearJumpEl.value, 10);
+      renderYearTabs();
+      renderList();
     });
   }
 
@@ -176,6 +195,7 @@
   });
 
   renderYearTabs();
+  renderYearJump();
   renderYearSelectOptions();
   renderList();
 })();

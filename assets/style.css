@@ -109,9 +109,11 @@ a { color: inherit; text-decoration: none; }
 
 /* Mypage */
 .mypage-header { padding-bottom: 8px; }
-.year-tabs { display: flex; gap: 8px; flex-wrap: wrap; padding: 8px 0 28px; }
-.year-tab { font-family: inherit; font-size: 14px; font-weight: 700; padding: 8px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; color: var(--ink-soft); cursor: pointer; }
+.year-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 8px 0 4px; }
+.year-tab { flex-shrink: 0; font-family: inherit; font-size: 14px; font-weight: 700; padding: 8px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; color: var(--ink-soft); cursor: pointer; }
 .year-tab.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+.year-jump-row { display: flex; align-items: center; gap: 10px; padding: 4px 0 24px; font-size: 13.5px; color: var(--ink-soft); font-weight: 600; }
+.year-jump-row select { font-family: inherit; font-size: 14px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
 
 .add-form { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin-bottom: 40px; display: flex; flex-direction: column; gap: 12px; }
 .add-form input[type="text"] { font-family: inherit; font-size: 15px; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line); }
