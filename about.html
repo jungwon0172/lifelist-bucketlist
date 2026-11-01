@@ -2,27 +2,30 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>사이트 소개 - 라이프리스트</title>
 <meta name="description" content="라이프리스트 사이트 소개 페이지입니다.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://example-lifelist.vercel.app/about.html">
 <meta property="og:title" content="사이트 소개 - 라이프리스트">
 <meta property="og:description" content="라이프리스트 사이트 소개 페이지입니다.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://example-lifelist.vercel.app/about.html">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="라이프리스트">
 <meta name="naver-site-verification" content="d2c18578085fdac7f6232a9e1ecae478c88da880">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/style.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2557338953436433" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://example-lifelist.vercel.app/#org", "name": "라이프리스트", "url": "https://example-lifelist.vercel.app", "email": "yjw2172@naver.com"}, {"@type": "WebSite", "@id": "https://example-lifelist.vercel.app/#website", "url": "https://example-lifelist.vercel.app", "name": "라이프리스트", "description": "인생의 각 시기마다 지금 아니면 하기 어려운 것과, 지금 해두면 다음 시기에 큰 도움이 되는 것을 함께 정리한 시기별 버킷리스트.", "inLanguage": "ko", "publisher": {"@id": "https://example-lifelist.vercel.app/#org"}}, {"@type": "AboutPage", "url": "https://example-lifelist.vercel.app/about.html", "name": "사이트 소개 - 라이프리스트", "inLanguage": "ko", "isPartOf": {"@id": "https://example-lifelist.vercel.app/#website"}, "about": {"@id": "https://example-lifelist.vercel.app/#org"}}]}</script>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="logo" href="index.html">라이프리스트<span class="logo-dot">.</span></a>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="주요 메뉴">
       <a href="index.html" class="">홈</a>
       <a href="about.html" class="active">소개</a>
-      <a href="mypage.html" class="">마이페이지</a>
       <a href="contact.html" class="">문의</a>
     </nav>
   </div>
@@ -33,7 +36,7 @@
   <h1>사이트 소개</h1>
   <p>라이프리스트는 인생의 각 시기마다 '지금 아니면 하기 어려운 것'과 '지금 해두면 다음 시기에 도움이 되는 것'을
   함께 정리해서 보여주는 시기별 버킷리스트 정보 사이트입니다.</p>
-  <p>10대 학생 시절부터 은퇴 이후까지 총 8개의 인생 시기를 기준으로 콘텐츠를 구성했으며,
+  <p>10대 학생 시절부터 은퇴 이후까지 총 8개의 인생 시기, 73개 항목을 기준으로 콘텐츠를 구성했으며,
   각 항목마다 예상 비용과 난이도를 함께 표시하여 실제로 참고하기 쉽도록 만들었습니다.</p>
   <p>마음에 드는 항목은 <strong>마이페이지</strong>에 담아 연도별로 나만의 라이프리스트를 관리할 수 있으며,
   직접 항목을 추가하는 것도 가능합니다. (브라우저 저장 방식으로, 로그인은 필요하지 않습니다.)</p>
@@ -78,6 +81,12 @@
   <button id="cookie-accept" class="btn-accept" type="button">확인했어요</button>
 </div>
 <script src="assets/cookie-consent.js"></script>
+
+<nav class="bottom-nav" aria-label="하단 메뉴">
+  <a href="index.html" class="bn-item"><span class="bn-icon">🏠</span><span class="bn-label">홈</span></a>
+  <a href="index.html#categories" class="bn-item"><span class="bn-icon">🗂️</span><span class="bn-label">시기별</span></a>
+  <a href="mypage.html" class="bn-item"><span class="bn-icon">📝</span><span class="bn-label">마이페이지</span></a>
+</nav>
 
 
 </body>

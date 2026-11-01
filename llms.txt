@@ -1,0 +1,28 @@
+# 라이프리스트
+
+> 인생의 각 시기마다 지금 아니면 하기 어려운 것과, 지금 해두면 다음 시기에 큰 도움이 되는 것을 함께 정리한 시기별 버킷리스트.
+
+## 이 사이트에 대하여
+- 10대 학생 시절부터 은퇴 이후까지 8개 인생 시기, 총 73개 버킷리스트 항목을 다룹니다.
+- 각 시기는 '지금 아니면 하기 어려운 것(소멸형)'과 '지금 해두면 다음 시기에 도움이 되는 것(준비형)'으로 나뉩니다.
+- 모든 항목에 비용(무료·저비용·중비용·고비용)과 난이도(쉬움·보통·어려움) 참고 태그가 붙어 있습니다.
+- 마이페이지는 로그인 없이 브라우저 로컬 저장소에만 저장되는 개인 목록 기능입니다.
+
+## 시기별 버킷리스트
+- [10대·학생 시절](https://example-lifelist.vercel.app/categories/teen.html): 교복을 입고 있는 지금이 아니면 못 하는 것들 (지금 아니면 못 하는 것 5개, 준비형 5개)
+- [대학생 시절](https://example-lifelist.vercel.app/categories/university.html): 취업 전, 가장 긴 자유 시간이 주어지는 시기 (지금 아니면 못 하는 것 5개, 준비형 5개)
+- [사회초년생](https://example-lifelist.vercel.app/categories/early-career.html): 처음으로 내 돈이 생기는, 재테크 골든타임 (지금 아니면 못 하는 것 4개, 준비형 6개)
+- [미혼 20~30대](https://example-lifelist.vercel.app/categories/pre-marriage.html): 결혼과 육아 전, 온전히 나를 위한 시간 (지금 아니면 못 하는 것 4개, 준비형 5개)
+- [신혼부부 시기](https://example-lifelist.vercel.app/categories/newlywed.html): 아이가 생기기 전, 둘만의 시간이 가장 자유로울 때 (지금 아니면 못 하는 것 4개, 준비형 5개)
+- [육아기 부모](https://example-lifelist.vercel.app/categories/parenting.html): 아이가 크기 전, 지금 이 순간만 누릴 수 있는 것들 (지금 아니면 못 하는 것 4개, 준비형 5개)
+- [자녀 독립 후 중년](https://example-lifelist.vercel.app/categories/empty-nest.html): 다시 찾은 자유 시간, 그리고 본격적인 은퇴 준비 (지금 아니면 못 하는 것 3개, 준비형 5개)
+- [은퇴 전후·시니어](https://example-lifelist.vercel.app/categories/retirement.html): 체력이 허락하는 지금, 그리고 남은 시간을 위한 준비 (지금 아니면 못 하는 것 3개, 준비형 5개)
+
+## 기타 페이지
+- [마이페이지](https://example-lifelist.vercel.app/mypage.html): 담은 항목과 직접 추가한 항목을 연도별로 관리
+- [사이트 소개](https://example-lifelist.vercel.app/about.html): 사이트 목적과 콘텐츠 작성 원칙
+- [문의하기](https://example-lifelist.vercel.app/contact.html): 오류 제보 및 제휴 문의
+
+## 이용 참고
+- 콘텐츠는 일반적인 정보 제공 목적이며 개인의 재무·건강·법률 판단을 대체하지 않습니다.
+- 인용 시 출처로 사이트 이름과 해당 페이지 URL을 표기해 주세요.

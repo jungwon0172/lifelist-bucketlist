@@ -74,7 +74,7 @@
       var empty = document.createElement('div');
       empty.className = 'empty-state';
       empty.innerHTML = selectedYear + '년에 담긴 라이프리스트가 아직 없어요.<br>' +
-        '<a href="index.html">카테고리 둘러보기</a> 에서 항목을 담거나, 위에서 직접 추가해보세요.';
+        '<a href="index.html#categories">시기별 카테고리 둘러보기</a> 에서 항목을 담거나, 위에서 직접 추가해보세요.';
       listEl.appendChild(empty);
       return;
     }
@@ -134,7 +134,6 @@
       });
       yearSel.addEventListener('change', function () {
         updateItem(it.id, { year: parseInt(yearSel.value, 10) });
-        renderList();
       });
 
       var delBtn = document.createElement('button');
@@ -190,6 +189,7 @@
     saveItems(items);
     titleInput.value = '';
     selectedYear = parseInt(yearSelectEl.value, 10);
+    yearJumpEl.value = selectedYear;
     renderYearTabs();
     renderList();
   });
